@@ -8,17 +8,17 @@ DOC: Text Recognition via Dual Adaptation and Clustering
  `pip install torch==1.2.0 pillow==6.2.1 torchvision==0.4.0 lmdb nltk natsort`
  
  ## Datasets
- The prepared synthetic text dataset and real scene text datasets can be download from [here](https://www.dropbox.com/sh/i39abvnefllx2si/AAAbAYRvxzRp3cIE5HzqUw3ra?dl=0)
+ The prepared synthetic text dataset and real scene text datasets can be download from [here][1](https://www.dropbox.com/sh/i39abvnefllx2si/AAAbAYRvxzRp3cIE5HzqUw3ra?dl=0)
  1. Synthetic text dataset
  * [MJSynth(MJ)](https://www.robots.ox.ac.uk/~vgg/data/text/)
  * [SynthText(ST)](https://www.robots.ox.ac.uk/~vgg/data/scenetext/)
  2. Real scene text dataset
  * The union of the training datasets [IIIT](http://cvit.iiit.ac.in/projects/SceneTextUnderstanding/IIIT5K.html), [SVT](http://www.iapr-tc11.org/mediawiki/index.php/The_Street_View_Text_Dataset), [IC13](https://rrc.cvc.uab.es/?ch=2), [IC15](https://rrc.cvc.uab.es/?ch=4)
  * Benchmark evaluation scene text datasets:  [IIIT](http://cvit.iiit.ac.in/projects/SceneTextUnderstanding/IIIT5K.html), [SVT](http://www.iapr-tc11.org/mediawiki/index.php/The_Street_View_Text_Dataset), [IC03](http://www.iapr-tc11.org/mediawiki/index.php/ICDAR_2003_Robust_Reading_Competitions), [IC13](https://rrc.cvc.uab.es/?ch=2), [IC15](https://rrc.cvc.uab.es/?ch=4), [SVTP](https://openaccess.thecvf.com/content_iccv_2013/papers/Phan_Recognizing_Text_with_2013_ICCV_paper.pdf), [CUTE](http://cs-chan.com/downloads_CUTE80_dataset.html)
- 3. Handwritten text dataset
+ 3. Handwritten text dataset can be download from [here][2](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW)
  * [IAM](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database)
  ## Pretrained model
- You can download the pretrained models from [here](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW)
+ You can download the pretrained models from [here][2](https://www.dropbox.com/sh/4a9vrtnshozu929/AAAZucKLtEAUDuOufIRDVPOTa?dl=0)
  ## Training and evaluation
  * Training
 ```
@@ -36,5 +36,7 @@ DOC: Text Recognition via Dual Adaptation and Clustering
  --saved_model ./data/TPS-ResNet-BiLSTM-Attn.pth 
  ```
  ## Reference
+ [1] Baek, Jeonghun, et al. "What is wrong with scene text recognition model comparisons? dataset and model analysis." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2019.\
+ [2] Zhang, Yaping, et al. "Robust text image recognition via adversarial sequence-to-sequence domain adaptation." IEEE Transactions on Image Processing 30 (2021): 3922-3933.
  ## Acknowledgement
- This implementation has been based on this [repository](https://github.com/AprilYapingZhang/Seq2SeqAdapt)
+ This implementation has been based on [Seq2SeqAdapt](https://github.com/AprilYapingZhang/Seq2SeqAdapt) and [pytorch-center-loss](https://github.com/KaiyangZhou/pytorch-center-loss)
