@@ -21,20 +21,20 @@ DOC: Text Recognition via Dual Adaptation and Clustering
  You can download the pretrained models from [here](https://drive.google.com/drive/folders/15WPsuPJDCzhp2SvYZLRj8mAlT3zmoAMW)
  ## Training and evaluation
  * Training
- '''
+```
  CUDA_VISIBLE_DEVICES=1 python train.py --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn \
 --src_train_data ./data/data_lmdb_release/training/ \
 --tar_train_data ./data/IAM/ --tar_select_data IAM --tar_batch_ratio 1 --valid_data ./data/IAM/ \
 --continue_model ./data/TPS-ResNet-BiLSTM-Attn.pth \
 --batch_size 192 --lr 1 \
 --experiment_name _adv_global_local_synth2iam_pc_0.1 --pc 0.1
-'''
+```
 * Evaluation
-'''
+```
  CUDA_VISIBLE_DEVICES=0 python test.py   --Transformation TPS --FeatureExtraction ResNet --SequenceModeling BiLSTM --Prediction Attn   \
  --eval_data ./data/IAM \
  --saved_model ./data/TPS-ResNet-BiLSTM-Attn.pth 
- '''
+ ```
  ## Reference
  ## Acknowledgement
  This implementation has been based on this [repository](https://github.com/AprilYapingZhang/Seq2SeqAdapt)
