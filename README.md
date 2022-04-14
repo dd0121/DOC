@@ -39,4 +39,4 @@ DOC: Text Recognition via Dual Adaptation and Clustering
  [1] Baek, Jeonghun, et al. "What is wrong with scene text recognition model comparisons? dataset and model analysis." Proceedings of the IEEE/CVF International Conference on Computer Vision. 2019.\
  [2] Zhang, Yaping, et al. "Robust text image recognition via adversarial sequence-to-sequence domain adaptation." IEEE Transactions on Image Processing 30 (2021): 3922-3933.
  ## Acknowledgement
- This implementation are based on [Seq2SeqAdapt](https://github.com/AprilYapingZhang/Seq2SeqAdapt) and [pytorch-center-loss](https://github.com/KaiyangZhou/pytorch-center-loss)
+ This implementation is based on [Seq2SeqAdapt](https://github.com/AprilYapingZhang/Seq2SeqAdapt) and [pytorch-center-loss](https://github.com/KaiyangZhou/pytorch-center-loss)
